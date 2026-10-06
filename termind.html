@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="termind.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            html,body{
+                width:100%;
+                height:100%;
+                margin:0px;
+            }
+            body{
+                background-color:black;
+                display:flex;
+                justify-content:center;
+            }
+            #khungchinh{
+                width:1000px;
+                height:580px;
+                margin-top:10px;
+                border:1.5px solid aqua;
+                
+            }
+            #header{
+                border:0.5px solid aqua;
+                width:1000px;
+                height:50px;
+                display:flex;
+                align-items:center;
+            }
+            #hienthi{
+                border:0.5px solid aqua;
+                width:1000px;
+                height:450px;
+                max-height:450px;
+                overflow-y:scroll;
+            }
+            #nhaplieu{
+                border:0.5px solid aqua;
+                width:1000px;
+                height:78px;
+                display:flex;
+                align-items:center;
+            }
+            #onhap{
+                width:300px;
+                height:40px;
+                background-color:black;
+                border:1.5px solid rgb(246, 100, 100);
+                border-radius:20px;
+                margin-left:20px;
+                padding-left:10px;
+                transition:1s;
+                color:rgb(0, 255, 47);
+                font-size:16px;
+                font-family:cursive;
+            }
+            #onhap:focus{
+                width:90%;
+                margin-right:20px;
+                border:1.5px solid rgb(0, 255, 47);
+            }
+            #onhap:focus ~ #lammoi{
+                display:none;
+                
+            }
+            #guilenh{
+                width:40px;
+                height:40px;
+                border-radius:100%;
+                background-color:rgba(0, 255, 221, 0.776);
+                color:white;
+                font-size:15px;
+                cursor:pointer;
+                border:1px solid red;
+                margin-left:10px;
+                margin-right:10px;
+                transition:1s;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="khungchinh">
+            <div id="header">
+                <h3 id="tenpcheader" style="color:rgb(255, 178, 127);margin-left:10px;"></h3>
+                <button id="tatpcbtn"><i class="fa-solid fa-power-off"></i></button>
+            </div>
+            <div id="hienthi"></div>
+            <div id="nhaplieu">
+                <input id="onhap" placeholder="Nhập lệnh cần thực thi...">
+                <button id="guilenh">OK</button>
+                <button id="lammoi">Làm mới</button>
+            </div>
+        </div>
+        <script src="termind.js" type="module"></script>
+    </body>
+</html>

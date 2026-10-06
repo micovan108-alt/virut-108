@@ -1,0 +1,13 @@
+.sudung{
+    width:100%;
+    height:35px;
+    background-color:aqua;
+    border:1px solid red;
+    color:rgb(41, 19, 243);
+    font-size:15px;
+    cursor:pointer;
+}
+
+.sudung:hover{
+    background-color:rgb(2, 222, 222);
+}

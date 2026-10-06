@@ -1,0 +1,47 @@
+.divtin:hover{
+    border:1px solid red !important;
+    cursor:pointer;
+}
+#hienthi::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+
+#hienthi::-webkit-scrollbar-track {
+  background: #3c3c3c;
+  border-radius: 0px;
+}
+
+
+#hienthi::-webkit-scrollbar-thumb {
+  background: #d9d8d8;
+  border-radius: 0px;
+}
+
+
+#hienthi::-webkit-scrollbar-thumb:hover {
+  background: #ecd030;
+  cursor:pointer;
+}
+#tatpcbtn{
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    
+    color:white;
+    cursor:pointer;
+    margin-left:500px;
+}
+#lammoi{
+  width:100px;
+  height:30px;
+  background-color:aquamarine;
+  border:2px solid rgb(238, 240, 238);
+  margin-left:30px;
+  color:rgb(5, 30, 255);
+  cursor:pointer;
+}
+#lammoi:active{
+  background-color:rgb(3, 194, 130);
+}
